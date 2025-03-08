@@ -69,13 +69,13 @@
             </div>
     
         </nav>
-      <!-- نموذج الحجز -->
+    
       <div class="container">
         <h1 class="text-center mb-4">حجز في منتجع هول إن ون</h1>
         
         <form id="bookingForm">
             <div class="row g-3">
-                <!-- حقول النموذج كما هي -->
+             
                 <div class="col-md-6">
                     <label class="form-label">الاسم الكامل</label>
                     <input type="text" class="form-control" required>
@@ -84,6 +84,11 @@
                 <div class="col-md-6">
                     <label class="form-label">رقم الهاتف</label>
                     <input type="tel" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">البريد الالكتروني </label>
+                    <input type="email"   class="form-control" required>
                 </div>
                 
                 <div class="col-md-6">
@@ -162,9 +167,7 @@
             if (this.checkValidity()) {
                 window.alert("تم تثبيت حجزك ب نجاح سوف نرسل لك التفاصيل على بريدك الالكتروني ");
                 this.reset();
-            } else {
-                window.alert("❗ يرجى ملء جميع الحقول المطلوبة");
-            }
+            } 
         });
     </script>
 </body>
